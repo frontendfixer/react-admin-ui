@@ -1,0 +1,12 @@
+{
+  "extends": ["@frontendfixer/react"],
+  "overrides": [
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "extends": ["@frontendfixer/react/typescript"],
+      "rules": {
+        "@typescript-eslint/comma-dangle": "off"
+      }
+    }
+  ]
+}
