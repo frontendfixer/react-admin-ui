@@ -1,0 +1,14 @@
+.footer {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  span {
+    &:first-child {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    &:last-child {
+      font-size: 14px;
+    }
+  }
+}
