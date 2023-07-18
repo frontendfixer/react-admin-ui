@@ -7,8 +7,8 @@ import Footer from './components/footer/Footer';
 import Menu from './components/menu/Menu';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
+import Product from './pages/products/Products';
 import Users from './pages/users/Users';
-import Product from './products/Products';
 
 function Layout() {
   return (
