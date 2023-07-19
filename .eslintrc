@@ -1,11 +1,17 @@
 {
   "extends": ["@frontendfixer/react"],
+  "rules": {},
   "overrides": [
     {
       "files": ["**/*.{ts,tsx}"],
       "extends": ["@frontendfixer/react/typescript"],
       "rules": {
-        "@typescript-eslint/comma-dangle": "off"
+        "@typescript-eslint/comma-dangle": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/indent": "off",
+        "react/destructuring-assignment": "off",
+        "react/require-default-props": "off"
       }
     }
   ]
