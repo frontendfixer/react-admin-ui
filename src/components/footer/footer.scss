@@ -1,7 +1,10 @@
+@import "../../styles/variables.scss";
+
 .footer {
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  background-color: $soft-bg;
   span {
     &:first-child {
       text-transform: uppercase;

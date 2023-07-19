@@ -1,3 +1,4 @@
+@import "../../styles/variables.scss";
 @import "../../styles/responsive.scss";
 
 .navbar {
@@ -6,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: $soft-bg;
 
   .logo {
     display: flex;
