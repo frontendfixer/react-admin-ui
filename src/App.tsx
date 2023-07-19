@@ -7,7 +7,9 @@ import Footer from './components/footer/Footer';
 import Menu from './components/menu/Menu';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/home/Home';
-import Product from './pages/products/Products';
+import Product from './pages/product/Product';
+import Products from './pages/products/Products';
+import User from './pages/user/User';
 import Users from './pages/users/Users';
 
 function Layout() {
@@ -41,7 +43,15 @@ const router = createBrowserRouter([
         element: <Users />,
       },
       {
+        path: '/users/:id',
+        element: <User />,
+      },
+      {
         path: '/products',
+        element: <Products />,
+      },
+      {
+        path: '/products/:id',
         element: <Product />,
       },
     ],
