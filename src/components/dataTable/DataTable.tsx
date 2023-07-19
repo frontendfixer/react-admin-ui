@@ -10,24 +10,24 @@ type Props = {
 };
 
 function DataTable(props: Props) {
-  const handelDelete = (id: number) => {
+  const handelDelete = (id: number, slug: string) => {
     // delete the item
-    console.log(`${id}-user has been deleted`);
+    alert(`No-${id} ${slug} has been deleted`);
   };
   const actionColumn: GridColDef = {
     field: 'actions',
     headerName: 'Actions',
     width: 200,
-    renderCell: (prams) => {
+    renderCell: (prop: { row: { id: number } }) => {
       return (
         <div className="action">
-          <Link to={`${props.slug}/${prams.row.id}`}>
+          <Link to={`/${props.slug}/${prop.row.id}`}>
             <img src="/view.svg" alt="  " />
           </Link>
           <button
             type="button"
             className="delete"
-            onClick={() => handelDelete(prams.row.id)}
+            onClick={() => handelDelete(prop.row.id, props.slug)}
           >
             <img src="/delete.svg" alt="" />
           </button>
