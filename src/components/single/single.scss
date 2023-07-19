@@ -1,0 +1,104 @@
+@import "../../styles/variables.scss";
+
+.single {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .view {
+    flex: 1;
+
+    .info {
+      .topInfo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+        h2 {
+          font-weight: 500;
+          font-size: 32px;
+        }
+        button {
+          cursor: pointer;
+          padding: 8px 20px;
+          background-color: $soft-color;
+          border-radius: 4px;
+          font: inherit;
+          font-weight: 500;
+          color: $main-bg;
+          border: none;
+        }
+      }
+
+      .details {
+        font-size: 18px;
+        .item {
+          margin: 30px 0px;
+
+          .itemTitle {
+            font-weight: 600;
+            margin-right: 10px;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+
+    .chart {
+      padding-top: 50px;
+      width: 80%;
+      height: 400px;
+      border-top: 2px solid rgb(87, 87, 87);
+    }
+  }
+
+  .activity {
+    flex: 1;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 500;
+    }
+
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        width: 2px;
+        padding-top: 40px;
+        margin-left: 10px;
+        background-color: #f45b69;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: #f45b69;
+          border-radius: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        div {
+          min-width: 480px;
+          padding: 10px;
+          margin-left: 10px;
+          background-color: #f45b682f;
+          p {
+            margin-bottom: 10px;
+          }
+          time {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
