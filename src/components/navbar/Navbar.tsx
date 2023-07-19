@@ -8,10 +8,10 @@ function Navbar() {
         <span>STORE</span>
       </div>
       <div className="icons">
-        <img src="/search.svg" alt="" />
-        <img src="/app.svg" alt="" />
-        <img src="/expand.svg" alt="" />
-        <div className="notification">
+        <img src="/search.svg" alt="" className="icon" />
+        <img src="/app.svg" alt="" className="icon" />
+        <img src="/expand.svg" alt="" className="icon" />
+        <div className=" icon notification ">
           <img src="/notifications.svg" alt=" " />
           <span>1</span>
         </div>
