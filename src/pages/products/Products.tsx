@@ -1,4 +1,4 @@
-import './product.scss';
+import './products.scss';
 
 import { GridColDef } from '@mui/x-data-grid';
 import { useState } from 'react';
@@ -55,7 +55,7 @@ const columns: GridColDef[] = [
   },
 ];
 
-function Product() {
+function Products() {
   const [open, setOpen] = useState(false);
   return (
     <div className="products">
@@ -71,4 +71,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default Products;
