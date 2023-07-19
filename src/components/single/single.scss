@@ -1,9 +1,15 @@
 @import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
 
 .single {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
+
+  @include md {
+    flex-direction: column;
+  }
 
   .view {
     flex: 1;
@@ -91,6 +97,14 @@
           padding: 10px;
           margin-left: 10px;
           background-color: #f45b682f;
+
+          @include xl {
+            min-width: 360px;
+          }
+          @include md {
+            min-width: 75vw;
+            padding: 4px;
+          }
           p {
             margin-bottom: 10px;
           }
